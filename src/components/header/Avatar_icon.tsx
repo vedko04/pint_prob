@@ -7,11 +7,11 @@ import {
     PopoverContent,
     PopoverTrigger
 } from "@vega-ui/react";
-import {Heart, Settings, User } from "@vega-ui/icons";
-import {Link} from "react-router-dom";
+import {Settings, User } from "@vega-ui/icons";
+import {Link, Route, Routes} from "react-router-dom";
+import Userpage from "./User_page.tsx";
 
 const Avatar_icon = () => {
-
 
     return (
         <div>
@@ -25,16 +25,16 @@ const Avatar_icon = () => {
                 </PopoverTrigger>
                 <PopoverContent className="menu">
                     <IconButton asChild>
-                        <Link to='/User'><Icon><Heart/></Icon></Link>
+                        <Link to="/User"><Icon><User /></Icon></Link>
                     </IconButton>
                     <IconButton asChild>
-                        <a href='#'><Icon><User/></Icon></a>
-                    </IconButton>
-                    <IconButton asChild>
-                        <a href='#'><Icon><Settings/></Icon></a>
+                        <Icon><Settings /></Icon>
                     </IconButton>
                 </PopoverContent>
             </Popover>
+            <Routes>
+                <Route path="/User" element={<Userpage />} />
+            </Routes>
         </div>
 
     );
