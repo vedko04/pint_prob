@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    gap: 40px;
+    padding-inline: 100px;
+}
+
+.Header_mini_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
