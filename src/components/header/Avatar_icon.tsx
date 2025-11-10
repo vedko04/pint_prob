@@ -10,6 +10,8 @@ import {
 import {Settings, User } from "@vega-ui/icons";
 import {Link, Route, Routes} from "react-router-dom";
 import Userpage from "./User_page.tsx";
+import App from "../../App.tsx";
+import NotFoundPage from "../main/NotFoundPage.tsx";
 
 const Avatar_icon = () => {
 
@@ -28,12 +30,14 @@ const Avatar_icon = () => {
                         <Link to="/User"><Icon><User /></Icon></Link>
                     </IconButton>
                     <IconButton asChild>
-                        <Icon><Settings /></Icon>
+                        <Link to="*"><Icon><Settings /></Icon></Link>
                     </IconButton>
                 </PopoverContent>
             </Popover>
             <Routes>
+                <Route path="/" element={<App />} />
                 <Route path="/User" element={<Userpage />} />
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </div>
 
