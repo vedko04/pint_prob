@@ -2,10 +2,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import Userpage from "./components/header/User_page.tsx";
+import Userpage from "./components/main/User_page.tsx";
 import App from './App.tsx'
 import NotFoundPage from "./components/main/NotFoundPage.tsx";
 import Login from './components/Login-register/Login.tsx';
+import Bell_icon from "./components/header/Bell_icon.tsx";
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
     },
     {
       path: "/Login",
-        element:<Login />
+        element:<Login />,
+    },
+    {
+      path:"/Notification",
+      element:<Bell_icon />,
     },
 ]);
 

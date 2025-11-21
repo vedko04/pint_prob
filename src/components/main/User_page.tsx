@@ -1,12 +1,11 @@
-import {Button} from "@vega-ui/react";
-import {Link} from "react-router";
 import "./User.css";
+import Header from "../header/header.tsx";
 
 const Userpage = () => {
     return (
         <div>
+            <Header/>
             <h1>your profile!</h1>
-            <Link to="/"><Button>Back to Home</Button></Link>
         </div>
     );
 };

@@ -1,36 +1,21 @@
 import {
     Avatar,
     AvatarFallback,
-    Icon,
-    IconButton,
-    Popover,
-    PopoverContent,
-    PopoverTrigger
 } from "@vega-ui/react";
-import {Settings, User } from "@vega-ui/icons";
 import { Link } from "react-router";
+import './Avatar_icon.css';
 
 const Avatar_icon = () => {
 
     return (
         <div>
-            <Popover>
-                <PopoverTrigger asChild>
-                    <Avatar size={'xl'}>
-                        <AvatarFallback>
-                            BC
-                        </AvatarFallback>
-                    </Avatar>
-                </PopoverTrigger>
-                <PopoverContent className="menu">
-                    <IconButton asChild>
-                        <Link to="/User"><Icon><User /></Icon></Link>
-                    </IconButton>
-                    <IconButton asChild>
-                        <Link to="*"><Icon><Settings /></Icon></Link>
-                    </IconButton>
-                </PopoverContent>
-            </Popover>
+            <Link to='/User' className='User_link'>
+                <Avatar size={'xl'}>
+                    <AvatarFallback>
+                        BC
+                    </AvatarFallback>
+                </Avatar>
+            </Link>
         </div>
 
     );

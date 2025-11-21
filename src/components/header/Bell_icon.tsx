@@ -1,6 +1,7 @@
-import {Button, Icon, IconButton, Popover, PopoverContent, PopoverTrigger} from "@vega-ui/react";
-import {Bell} from "@vega-ui/icons";
+
 import './Bell_icon.css'
+import {Icon, IconButton, Popover, PopoverContent, PopoverTrigger} from "@vega-ui/react";
+import {Bell} from "@vega-ui/icons";
 
 const Bell_icon = () => {
 
@@ -9,16 +10,13 @@ const Bell_icon = () => {
             <Popover>
                 <PopoverTrigger asChild>
                     <IconButton>
-                        <Icon><Bell /></Icon>
+                        <Icon><Bell/></Icon>
                     </IconButton>
                 </PopoverTrigger>
                 <PopoverContent className="menu">
-                    <Button size={'xs'} variant={''}>
-                        поставлен лайк
-                    </Button>
-                    <Button size={'xs'} variant={''}>
-                        на вас подписались
-                    </Button>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
                 </PopoverContent>
             </Popover>
         </div>
