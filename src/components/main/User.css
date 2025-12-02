@@ -3,3 +3,9 @@
     margin: 0;
     padding: 0;
 }
+
+.User_gap_info{
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}

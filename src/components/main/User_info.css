@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 50px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 40px;
+    padding: 40px;
+}
+
+.text_user_info{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
