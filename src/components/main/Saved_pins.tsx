@@ -1,8 +1,8 @@
-import './Main_page.css'
+import './saved_pins.css'
 
 const SavedPins = () => {
     return (
-        <div>
+        <div className="Main_page_img">
             <h2>Your saved pins</h2>
             <ol className="Page_img">
                 <li>Barabulka</li>
